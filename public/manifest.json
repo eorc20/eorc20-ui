@@ -1,0 +1,19 @@
+{
+  "short_name": "Inscription",
+  "name": "Inscription",
+  "description": "",
+  "homepage_url": "",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1FC7D4",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "16x16"
+    }
+  ],
+  "iconPath": "/images/logo.svg"
+}

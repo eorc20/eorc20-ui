@@ -1,0 +1,195 @@
+.input{
+  width: calc(100% - 0px);
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 10px 5px;
+  color: inherit;
+  font: inherit;
+  cursor: text;
+  outline: none;
+  /*取消焦点时的边框*/appearance: none;
+  /*移除默认的样式*/-webkit-appearance: none;
+  /*移除默认的样式，针对webkit浏览器*/-moz-appearance: none;
+  /*移除默认的样式，针对Firefox*/font-size: 18px;
+  border: 1px solid #EBEBEB;
+  border-radius: 6px;
+  padding-left: 10px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.input::placeholder{
+  color: #adadad; /* 设置 placeholder 文本颜色 */
+  font-weight: bold;
+  font-size: 16px;
+}
+.input:not(:placeholder-shown) {
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+}
+.tips{
+  font-size: 14px;
+  font-weight: 400;
+}
+.main{
+  /* height: 141px; */
+  // background: #FAFAFA;
+  // border-radius: 6px;
+  // -webkit-border-radius: 6px;
+  // -moz-border-radius: 6px;
+  // -ms-border-radius: 6px;
+  // -o-border-radius: 6px;
+  padding: 15px;
+  .label{
+    font-size: 16px;
+    font-weight: bold;
+    color: #14162A;
+  }
+  .userIn{
+    margin: 20px 0;
+    align-items: center;
+    .input:nth-child(1){
+      margin-bottom: 10px;
+    }
+  }
+  .bal{
+    font-size: 14px;
+    font-weight: 400;
+    // color: #24C3A0;
+  }
+  .symbol{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    white-space: nowrap;
+  }
+  .rateBox{
+    .rate{
+      width: 22%;
+      padding: 8px 10px;
+      border-radius: 6px;
+      border: 1px solid #ECECEC;
+      font-size: 14px;
+      font-weight: 400;
+      color: #000000;
+      cursor: pointer;
+    }
+  }
+}
+.lped{
+  margin: 15px 0;
+  .label{
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+  }
+  .price{
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+  }
+}
+.btn{
+  height: 45px;
+  background: #131313;
+  border-radius: 6px;
+  border: 1px solid #14162A;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.tabbar {
+  max-width: 70%;
+  height: 36px;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #14162A;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0 0 20px;
+  cursor: pointer;
+}
+
+.tab {
+  width: 50%;
+  padding: 10px;
+  color: black;
+  white-space: nowrap;
+}
+.tab:not(:last-child){
+  border-right: 1px solid #14162A;
+}
+
+.tabActive {
+  background: #FAD436;
+}
+
+/* 挖矿奖励 */
+.noahBox{
+  padding: 0 20px;
+  line-height: 40px;
+  background: #FAFAFA;
+  border-radius: 6px; 
+  margin: 20px 0 0;
+  // border: 1px solid red;
+  height: 276px;
+  overflow-y: scroll;
+  // padding: 0 24px;
+  // margin: 20px -24px 0;
+  .img{
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+  }
+  .noah{
+    font-size: 16px;
+    // font-weight: bold;
+    color: #000000;
+    
+  }
+  .price{
+    font-size: 14px;
+    // font-weight: bold;
+    color: #000000;
+  }
+  .tips{
+    font-size: 14px;
+    font-weight: 400;
+    color: #ADADAD;
+    line-height: 20px;
+  }
+}
+.bott{
+  padding: 5px 0px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  .val{
+    font-size: 16px;
+  }
+}
+.img{
+  width: 34px;
+  height: 34px;
+  margin-right: 5px;
+}
+.btn2{
+  margin-top: 20px;
+}
+.btn_disabled{
+  background-color: #E9EAEB;
+  border-color: #E9EAEB;
+  box-shadow: none;
+  color: #BDC2C4;
+  cursor: not-allowed;
+}

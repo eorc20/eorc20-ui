@@ -1,0 +1,26 @@
+{
+  "extends": "tsconfig/nextjs.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "baseUrl": "src",
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "noFallthroughCasesInSwitch": true,
+    "downlevelIteration": true,
+    "target": "es5",
+    // 路徑映射
+    "paths": {
+      "@inscription/sdk": ["../packages/swap-sdk/src/index.ts"],
+      "@inscription/wagmi/connectors/binanceWallet": ["../packages/wagmi/connectors/binanceWallet/index.ts"],
+      "@inscription/wagmi/connectors/miniProgram": ["../packages/wagmi/connectors/miniProgram/index.ts"],
+      "@inscription/wagmi/chains": ["../packages/wagmi/chains/index.ts"],
+      "@inscription/wagmi": ["../packages/wagmi/src/index.ts"],
+      "@inscription/hooks": ["../packages/hooks/src/index.ts"],
+      "@inscription/socket": ["../src/socket/index.js"],
+      "@inscription/tradeView": ["../src/tradeView/index.js"],
+      "@inscription/chartingLibrary": ["../public/static/charting_library/charting_library.js"]
+    }
+  },
+  "exclude": ["node_modules", "cypress", "/apps/*"],
+  "include": ["next-env.d.ts", "./src/**/*.ts", "./src/**/*.tsx"]
+}

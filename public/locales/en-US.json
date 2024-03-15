@@ -1,0 +1,17 @@
+{
+  "public1": "Connect Wallet",
+  "public7": "Recent Transactions",
+  "public8": "No recent transactions.",
+  "public11": "Swap",
+  "public37": "Liquidity",
+  "public16": "Slippage tolerance",
+  "public30": "Clear All",
+  "public78": "Confirm",
+  "public122": "Closed",
+  "public110": "Import LP",
+  "public184": "Switch Network",
+  "public216": "Default",
+  "public217": "Fast",
+  "public218": "Instant",
+  "public221": "If you encounter network lag, can you try to switch the RPC URL?"
+}

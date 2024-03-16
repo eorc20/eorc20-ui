@@ -17,7 +17,7 @@ import chainUtils from 'service/chainUtils'
 import { useSendTransaction, usePrepareSendTransaction, useFeeData } from 'wagmi'
 import { Pagination } from 'antd';
 import { ethers, utils } from 'ethers'
-import { Name } from '@wharfkit/session'
+// import { Name } from '@wharfkit/session'
 import Page from '../../Page'
 import styles from './style/index.module.scss'
 

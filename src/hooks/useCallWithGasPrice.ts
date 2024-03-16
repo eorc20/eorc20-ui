@@ -3,7 +3,6 @@ import { TransactionResponse } from '@ethersproject/providers'
 import { Contract, CallOverrides } from '@ethersproject/contracts'
 import { useGasPrice } from 'state/user/hooks'
 import get from 'lodash/get'
-import { addBreadcrumb } from '@sentry/nextjs'
 
 export function useCallWithGasPrice() {
   const gasPrice = useGasPrice()
@@ -23,16 +22,16 @@ export function useCallWithGasPrice() {
       methodArgs: any[] = [],
       overrides: CallOverrides = null,
     ): Promise<TransactionResponse> => {
-      addBreadcrumb({
-        type: 'Transaction',
-        message: `Call with gas price: ${gasPrice}`,
-        data: {
-          contractAddress: contract.address,
-          methodName,
-          methodArgs,
-          overrides,
-        },
-      })
+      // addBreadcrumb({
+      //   type: 'Transaction',
+      //   message: `Call with gas price: ${gasPrice}`,
+      //   data: {
+      //     contractAddress: contract.address,
+      //     methodName,
+      //     methodArgs,
+      //     overrides,
+      //   },
+      // })
 
       const contractMethod = get(contract, methodName)
       const hasManualGasPriceOverride = overrides?.gasPrice
@@ -41,18 +40,18 @@ export function useCallWithGasPrice() {
         hasManualGasPriceOverride ? { ...overrides } : { ...overrides, gasPrice },
       )
 
-      if (tx) {
-        addBreadcrumb({
-          type: 'Transaction',
-          message: `Transaction sent: ${tx.hash}`,
-          data: {
-            hash: tx.hash,
-            from: tx.from,
-            gasLimit: tx.gasLimit?.toString(),
-            nonce: tx.nonce,
-          },
-        })
-      }
+      // if (tx) {
+      //   addBreadcrumb({
+      //     type: 'Transaction',
+      //     message: `Transaction sent: ${tx.hash}`,
+      //     data: {
+      //       hash: tx.hash,
+      //       from: tx.from,
+      //       gasLimit: tx.gasLimit?.toString(),
+      //       nonce: tx.nonce,
+      //     },
+      //   })
+      // }
 
       return tx
     },

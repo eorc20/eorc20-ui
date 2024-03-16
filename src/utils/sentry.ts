@@ -1,4 +1,4 @@
-import { captureException } from '@sentry/nextjs'
+// import { captureException } from '@sentry/nextjs'
 
 const assignError = (maybeError: any) => {
   if (typeof maybeError === 'string') {
@@ -26,11 +26,11 @@ const ENABLED_LOG = false
 
 export const logError = (error: Error | unknown) => {
   if (ENABLED_LOG) {
-    if (error instanceof Error) {
-      captureException(error)
-    } else {
-      captureException(assignError(error), error)
-    }
+    // if (error instanceof Error) {
+    //   captureException(error)
+    // } else {
+    //   captureException(assignError(error), error)
+    // }
   }
   console.error(error)
 }

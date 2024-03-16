@@ -40,8 +40,8 @@ import styles from '../style/transfereorc.module.scss'
 import { formatToThousands } from 'utils/formatInfoNumbers'
 import { getTokens } from 'service/service'
 import { ethers, utils } from 'ethers'
-import { Span } from '@sentry/nextjs'
-import { AnyAction } from '@reduxjs/toolkit'
+// import { Span } from '@sentry/nextjs'
+// import { AnyAction } from '@reduxjs/toolkit'
 
 export const ModalHeader = styled.div<{ background?: string }>`
   align-items: center;

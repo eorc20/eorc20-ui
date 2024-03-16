@@ -6,39 +6,10 @@
     "packages/*"
   ],
   "scripts": {
-    "analyze": "ANALYZE=true yarn build",
-    "dev": "next dev -p 3600",
+    "dev": "next dev",
     "build": "next build",
     "export": "next build && next export",
-    "start": "next start -p 3600",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:config": "jest src/config/__tests__/ --testPathIgnorePatterns",
-    "integration-test": "start-server-and-test start http://localhost:3600 'turbo run integration-test --filter=test'",
-    "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
-    "lint:style": "npx stylelint '**/*.{ts,tsx}'",
-    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json}\"",
-    "format:check:staged": "lint-staged",
-    "format:write": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\"",
-    "updateLPsAPR": "yarn turbo run build --filter=@inscription/sdk && NODE_PATH=./src ts-node --compiler-options '{\"module\":\"commonjs\"}' scripts/updateLPsAPR.ts",
-    "prepare": "husky install",
-    "postinstall": "yarn run typechain",
-    "typechain": "typechain --out-dir src/config/abi/types --target=ethers-v5 \"src/config/abi/*.json\""
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "engines": {
-    "node": ">=16.0.0"
+    "start": "next start"
   },
   "dependencies": {
     "@ethersproject/abi": "^5.0.0",
@@ -53,11 +24,8 @@
     "@ethersproject/units": "^5.0.0",
     "@gelatonetwork/limit-orders-lib": "^4.1.0",
     "@gnosis.pm/safe-apps-wagmi": "^1.0.2",
-    "@next/bundle-analyzer": "^12.0.7",
     "@reduxjs/toolkit": "^1.8.2",
-    "@sentry/nextjs": "^7.9.0",
     "@uniswap/token-lists": "^1.0.0-beta.19",
-    "@wharfkit/session": "^1.1.1",
     "ajv": "^6.12.3",
     "antd": "^5.6.4",
     "bignumber.js": "^9.0.0",
@@ -76,7 +44,6 @@
     "localforage": "^1.10.0",
     "lodash": "^4.17.21",
     "next": "^12.2.5",
-    "next-axiom": "^0.13.0",
     "next-themes": "^0.2.0",
     "numeral": "^2.0.6",
     "pako": "^2.0.4",
@@ -96,20 +63,15 @@
     "styled-components": "^5.3.3",
     "swiper": "^8.3.2",
     "swr": "^1.3.0",
-    "typescript": "^4.6.3",
     "wagmi": "^0.6.0",
     "webpack-s3-plugin": "^1.2.0-rc.0",
     "ws": "^5.2.1"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^12.0.10",
+    "typescript": "^4.6.3",
     "@stylelint/postcss-css-in-js": "^0.37.2",
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^13.3.0",
-    "@testing-library/react-hooks": "^8.0.1",
     "@typechain/ethers-v5": "^8.0.5",
     "@types/canvas-confetti": "^1.4.2",
-    "@types/jest": "^26.0.23",
     "@types/lodash": "^4.14.178",
     "@types/node": "^13.13.5",
     "@types/react": "^18.0.17",
@@ -120,29 +82,14 @@
     "@types/react-window": "^1.8.3",
     "@types/simplemde": "^1.11.7",
     "@types/styled-components": "^5.1.26",
-    "eslint": "^7.26.0",
-    "eslint-plugin-cypress": "^2.11.3",
-    "eslint-plugin-lodash": "^7.4.0",
-    "husky": "^7.0.0",
-    "jest": "^27.4.5",
-    "lerna": "^4.0.0",
     "lint-staged": "^12.3.4",
     "next-transpile-modules": "^9.0.0",
     "postcss-scss": "^4.0.3",
     "postcss-syntax": "^0.36.2",
-    "prettier": "^2.3.0",
     "sass": "^1.26.5",
     "serve": "^12.0.0",
     "source-map-explorer": "^2.5.2",
-    "start-server-and-test": "^1.14.0",
-    "stylelint": "^14.5.3",
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-recommended": "^7.0.0",
-    "stylelint-config-standard": "^25.0.0",
-    "stylelint-config-styled-components": "^0.1.1",
-    "ts-node": "^10.9.1",
     "tsconfig": "*",
-    "turbo": "^1.3.1",
     "typechain": "^6.1.0"
   }
 }

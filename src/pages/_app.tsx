@@ -22,7 +22,6 @@ import { usePollBlockNumber } from 'state/block/hooks'
 // import { usePollCoreFarmData } from 'state/farms/hooks'
 import { NextPage } from 'next'
 import { Blocklist, Updaters } from '..'
-import { SentryErrorBoundary } from '../components/ErrorBoundary'
 import Menu from '../components/Menu/index'
 import Providers from '../Providers'
 import GlobalStyle from '../style/Global'
@@ -117,7 +116,7 @@ type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout
 }
 
-const ProductionErrorBoundary = process.env.NODE_ENV === 'production' ? SentryErrorBoundary : Fragment
+const ProductionErrorBoundary = Fragment
 // const ProductionErrorBoundary = Fragment
 
 const App = ({ Component, pageProps }: AppPropsWithLayout) => {

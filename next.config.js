@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable */
-const withTM = require('next-transpile-modules')(['@inscription/uikit', '@inscription/sdk'])
+const withTM = require('next-transpile-modules')(['@inscription/uikit'])
 
 /** @type {import('next').NextConfig} */
 const config = {

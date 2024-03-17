@@ -1,7 +1,7 @@
 import { Button, ButtonProps } from '@inscription/uikit'
-import { useSwitchNetworkLoading } from 'hooks/useSwitchNetworkLoading'
+import { useSwitchNetworkLoading } from '../hooks/useSwitchNetworkLoading'
 import { useSetAtom } from 'jotai'
-import { useActiveChainId } from 'hooks/useActiveChainId'
+import { useActiveChainId } from '../hooks/useActiveChainId'
 import { hideWrongNetworkModalAtom } from './NetworkModal'
 import Trans from './Trans'
 

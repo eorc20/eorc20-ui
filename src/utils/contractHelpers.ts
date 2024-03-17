@@ -1,7 +1,7 @@
 /* eslint-disable */
 import type { Signer } from '@ethersproject/abstract-signer'
 import type { Provider } from '@ethersproject/providers'
-import { provider } from 'utils/wagmi'
+import { provider } from '../utils/wagmi'
 import { Contract } from '@ethersproject/contracts'
 
 // Addresses
@@ -9,12 +9,12 @@ import {
   getAddress,
   getMulticallAddress,
   getVoterAddress,
-} from 'utils/addressHelpers'
+} from '../utils/addressHelpers'
 
 // ABI
-import bep20Abi from 'config/abi/erc20.json'
-import MultiCallAbi from 'config/abi/Multicall.json'
-import VoterAbi from 'config/abi/Voter.json'
+import bep20Abi from '../config/abi/erc20.json'
+import MultiCallAbi from '../config/abi/Multicall.json'
+import VoterAbi from '../config/abi/Voter.json'
 import { useRouter } from 'next/router'
 
 // Types
@@ -22,7 +22,7 @@ import { useRouter } from 'next/router'
 //   Erc20,
 //   Multicall,
 // } from 'config/abi/types'
-import { ChainId } from '@inscription/sdk'
+import { ChainId } from '../../packages/swap-sdk/src/index'
 
 export const getContract = ({
   abi,

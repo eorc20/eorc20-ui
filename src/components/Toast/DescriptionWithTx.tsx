@@ -1,8 +1,8 @@
 import { Link, Text } from '@inscription/uikit'
-import { getBlockExploreLink, getBlockExploreName } from 'utils'
-import useActiveWeb3React from 'hooks/useActiveWeb3React'
+import { getBlockExploreLink, getBlockExploreName } from '../../utils'
+import useActiveWeb3React from '../../hooks/useActiveWeb3React'
 import { useTranslation } from '@inscription/localization'
-import truncateHash from 'utils/truncateHash'
+import truncateHash from '../../utils/truncateHash'
 
 interface DescriptionWithTxProps {
   description?: string

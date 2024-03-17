@@ -14,7 +14,7 @@ import {
   createMigrate,
 } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
-import IndexedDBStorage from 'utils/IndexedDBStorage'
+import IndexedDBStorage from '../utils/IndexedDBStorage'
 import { updateVersion } from './global/actions'
 // import multicall from './multicall/reducer'
 import transactions from './transactions/reducer'

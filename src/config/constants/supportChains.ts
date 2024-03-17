@@ -1,4 +1,4 @@
-import { ChainId } from '@inscription/sdk'
+import { ChainId } from '../../../packages/swap-sdk/src/index'
 
 // export const SUPPORT_ONLY_EVM = [ChainId.EVM]
 export const SUPPORT_ONLY_EVM = [ChainId.EVM_NET, ChainId.EVM_TESTNET]

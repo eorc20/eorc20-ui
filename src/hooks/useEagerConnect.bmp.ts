@@ -4,7 +4,7 @@ import { useCallback } from 'react'
 import { useTranslation } from '@inscription/localization'
 import { MiniProgramConnector } from '@inscription/wagmi/connectors/miniProgram'
 import { useConnect } from 'wagmi'
-import getWeb3Provider from 'utils/mpBridge'
+import getWeb3Provider from '../utils/mpBridge'
 import { chains } from '../utils/wagmi'
 /* eslint max-classes-per-file: off -- noop */
 import useToast from './useToast'

@@ -1,5 +1,5 @@
-import { ToastContainer } from 'components/Toast'
-import useToast from 'hooks/useToast'
+import { ToastContainer } from '../../components/Toast'
+import useToast from '../../hooks/useToast'
 import { useCallback } from 'react'
 
 const ToastListener = () => {

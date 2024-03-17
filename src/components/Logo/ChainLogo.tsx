@@ -1,6 +1,6 @@
 import Image from 'next/future/image'
 import { HelpIcon } from '@inscription/uikit'
-import { isChainSupported } from 'utils/wagmi'
+import { isChainSupported } from '../../utils/wagmi'
 import { memo } from 'react'
 
 export const ChainLogo = memo(({ chainId }: { chainId: number }) => {

@@ -1,5 +1,5 @@
 import { ReactElement, useCallback, useEffect, useState } from 'react'
-import { ChainId, Currency, Token } from '@inscription/sdk'
+import { ChainId, Currency, Token } from '../../../packages/swap-sdk/src/index'
 import styled from 'styled-components'
 import {
   Button,
@@ -15,8 +15,8 @@ import {
   ModalProps,
 } from '@inscription/uikit'
 import { useTranslation } from '@inscription/localization'
-import useActiveWeb3React from 'hooks/useActiveWeb3React'
-import { wrappedCurrency } from 'utils/wrappedCurrency'
+import useActiveWeb3React from '../../hooks/useActiveWeb3React'
+import { wrappedCurrency } from '../../utils/wrappedCurrency'
 import { WrappedTokenInfo } from '@inscription/tokens'
 import { AutoColumn, ColumnCenter } from '../Layout/Column'
 import { getBlockExploreLink, getBlockExploreName } from '../../utils'

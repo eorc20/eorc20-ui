@@ -1,5 +1,5 @@
-import { ChainId } from '@inscription/sdk'
-import { BIG_TEN } from 'utils/bigNumber'
+import { ChainId } from '../../packages/swap-sdk/src'
+import { BIG_TEN } from '../utils/bigNumber'
 
 export const EVM_BLOCK_TIME = 3
 

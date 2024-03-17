@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { menuStatus } from '@inscription/uikit'
-import useActiveWeb3React from 'hooks/useActiveWeb3React'
+import useActiveWeb3React from '../../../hooks/useActiveWeb3React'
 import { useTheme } from 'styled-components'
 import { useTranslation } from '@inscription/localization'
 import { useMenuItemsStatus } from './useMenuItemsStatus'

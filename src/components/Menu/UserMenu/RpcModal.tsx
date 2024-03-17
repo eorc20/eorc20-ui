@@ -14,18 +14,18 @@ import {
   Flex,
   useModal,
 } from '@inscription/uikit'
-import { useWeb3React } from '@inscription/wagmi'
-import { useState, useMemo } from 'react'
+// import { useWeb3React } from '@inscription/wagmi'
+// import { useState, useMemo } from 'react'
 import { useTranslation } from '@inscription/localization'
-import useActiveWeb3React from 'hooks/useActiveWeb3React'
+import useActiveWeb3React from '../../../hooks/useActiveWeb3React'
 import styled from 'styled-components'
-import { ChainLogo } from 'components/Logo/ChainLogo'
-import { useActiveChainId } from 'hooks/useActiveChainId'
-import { useSwitchNetwork } from 'hooks/useSwitchNetwork'
-import { useNetworkConnectorUpdater } from 'hooks/useActiveWeb3React'
-import useToast from 'hooks/useToast'
+// import { ChainLogo } from 'components/Logo/ChainLogo'
+// import { useActiveChainId } from 'hooks/useActiveChainId'
+// import { useSwitchNetwork } from 'hooks/useSwitchNetwork'
+// import { useNetworkConnectorUpdater } from 'hooks/useActiveWeb3React'
+import useToast from '../../../hooks/useToast'
 import { useRouter, NextRouter } from 'next/router'
-import { EVM_PROD_NODE } from 'utils/providers'
+import { EVM_PROD_NODE } from '../../../utils/providers'
 // eslint-disable-next-line import/no-cycle
 import NetworkModal from './NetworkModal'
 
@@ -77,7 +77,7 @@ const RpcModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ onDis
   const parsedQueryChainId = chainId || Number(router.query.chainId)
   // console.log('parsedQueryChainId', parsedQueryChainId)
   const rpcUrl = localStorage.getItem('rpcUrl') || EVM_PROD_NODE
-  const { toastError } = useToast()
+  // const { toastError } = useToast()
 
   const { isMobile } = useMatchBreakpoints()
   const [onPresentNetworkModal] = useModal(<NetworkModal />)

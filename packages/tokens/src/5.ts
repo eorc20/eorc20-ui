@@ -1,4 +1,4 @@
-import { ChainId, Token, WETH9 } from '@inscription/sdk'
+import { ChainId, Token, WETH9 } from '../../swap-sdk/src/index'
 import { USDC_GOERLI } from './common'
 
 export const goerliTestnetTokens = {

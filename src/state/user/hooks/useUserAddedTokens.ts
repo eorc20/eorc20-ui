@@ -1,6 +1,6 @@
-import { Token } from '@inscription/sdk'
+import { Token } from '../../../../packages/swap-sdk/src/index'
 import { createSelector } from '@reduxjs/toolkit'
-import useActiveWeb3React from 'hooks/useActiveWeb3React'
+import useActiveWeb3React from '../../../hooks/useActiveWeb3React'
 import { deserializeToken } from '@inscription/tokens'
 import { useSelector } from 'react-redux'
 import { AppState } from '../../index'

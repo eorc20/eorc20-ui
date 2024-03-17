@@ -1,8 +1,8 @@
 import { Button, ButtonProps } from '@inscription/uikit'
-import { useWallet } from 'hooks/useWallet'
+import { useWallet } from '../hooks/useWallet'
 // @ts-ignore
 // eslint-disable-next-line import/extensions
-import { useActiveHandle } from 'hooks/useEagerConnect.bmp.ts'
+import { useActiveHandle } from '../hooks/useEagerConnect.bmp.ts'
 import Trans from './Trans'
 
 const ConnectWalletButton = ({ children, ...props }: ButtonProps) => {

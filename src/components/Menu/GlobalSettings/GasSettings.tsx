@@ -1,10 +1,10 @@
 import { Flex, Button, Text } from '@inscription/uikit'
-import QuestionHelper from 'components/QuestionHelper'
+import QuestionHelper from '../../../components/QuestionHelper'
 import { useTranslation } from '@inscription/localization'
-import { useGasPriceManager } from 'state/user/hooks'
-import { GAS_PRICE_GWEI, GAS_PRICE } from 'state/types'
-import useActiveWeb3React from 'hooks/useActiveWeb3React'
-import { ChainId } from '@inscription/sdk'
+import { useGasPriceManager } from '../../../state/user/hooks'
+import { GAS_PRICE_GWEI, GAS_PRICE } from '../../../state/types'
+import useActiveWeb3React from '../../../hooks/useActiveWeb3React'
+import { ChainId } from '../../../../packages/swap-sdk/src/index'
 
 const GasSettings = () => {
   const { t } = useTranslation()

@@ -1,8 +1,8 @@
 import { Flex, Box, Text, WalletIcon } from '@inscription/uikit'
 import styled from 'styled-components'
-import useActiveWeb3React from 'hooks/useActiveWeb3React'
-import useTheme from 'hooks/useTheme'
-import { useSystemInfo, bridgeUtils } from 'utils/mpBridge'
+import useActiveWeb3React from '../hooks/useActiveWeb3React'
+import useTheme from '../hooks/useTheme'
+import { useSystemInfo, bridgeUtils } from '../utils/mpBridge'
 
 const title = {
   dark: '/images/nav-title-dark.png',

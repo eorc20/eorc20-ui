@@ -9,7 +9,7 @@ import {
   OperaIcon,
   BinanceChainIcon,
 } from '@inscription/uikit'
-import { BAD_SRCS } from 'components/Logo/Logo'
+import { BAD_SRCS } from '../../components/Logo/Logo'
 import { useAccount } from 'wagmi'
 
 export enum AddToWalletTextOptions {

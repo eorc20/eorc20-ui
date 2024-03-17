@@ -1,5 +1,5 @@
-import { CHAIN_IDS } from 'utils/wagmi'
-import Eorc from '../views/Eorc'
+import { CHAIN_IDS } from '../src/utils/wagmi'
+import Eorc from '../src/views/Eorc'
 
 const SwapPage = () => {
   return <Eorc />

@@ -1,4 +1,4 @@
-import { Token } from '@inscription/sdk'
+import { Token } from '../../packages/swap-sdk/src/index'
 import { Modal, Box, InjectedModalProps } from '@inscription/uikit'
 // import ImportToken from 'components/SearchModal/ImportToken'
 import { useTranslation } from '@inscription/localization'

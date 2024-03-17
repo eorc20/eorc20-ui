@@ -1,7 +1,7 @@
 import { Contract, PayableOverrides } from '@ethersproject/contracts'
 import { TransactionResponse } from '@ethersproject/providers'
-import { calculateGasMargin } from 'utils'
-import { ContractMethodName, MaybeContract, ContractMethodParams } from 'utils/types'
+import { calculateGasMargin } from '../../utils'
+import { ContractMethodName, MaybeContract, ContractMethodParams } from '../../utils/types'
 
 /**
  * Estimate the gas needed to call a function, and add a 10% margin

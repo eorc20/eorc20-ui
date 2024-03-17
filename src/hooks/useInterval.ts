@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, useCallback } from 'react'
-import isUndefinedOrNull from 'utils/isUndefinedOrNull'
+import isUndefinedOrNull from '../utils/isUndefinedOrNull'
 import { useLastUpdated } from '@inscription/hooks'
 
 export default function useInterval(

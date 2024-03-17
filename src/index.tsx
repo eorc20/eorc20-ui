@@ -1,5 +1,5 @@
 import { ReactNode, useMemo } from 'react'
-import { useWeb3React } from '@inscription/wagmi'
+import { useWeb3React } from '../packages/wagmi/src/index'
 import { BLOCKED_ADDRESSES } from './config/constants'
 // import ListsUpdater from './state/lists/updater'
 // import MulticallUpdater from './state/multicall/updater'

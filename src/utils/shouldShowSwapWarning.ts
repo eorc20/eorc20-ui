@@ -1,4 +1,4 @@
-import { Token } from '@inscription/sdk'
+import { Token } from '../../packages/swap-sdk/src/index'
 // import SwapWarningTokens from 'config/constants/swapWarningTokens'
 
 // const swapWarningTokens = Object.values(SwapWarningTokens)

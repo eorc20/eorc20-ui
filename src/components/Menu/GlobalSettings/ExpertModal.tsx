@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Button, Text, Flex, Message, Modal, InjectedModalProps, Checkbox } from '@inscription/uikit'
-import { useExpertModeManager } from 'state/user/hooks'
+import { useExpertModeManager } from '../../../state/user/hooks'
 import { useTranslation } from '@inscription/localization'
 
 interface ExpertModalProps extends InjectedModalProps {

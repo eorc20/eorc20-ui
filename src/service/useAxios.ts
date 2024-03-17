@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { ssrWindow } from 'ssr-window'
-import useActiveWeb3React from 'hooks/useActiveWeb3React'
+import useActiveWeb3React from '../hooks/useActiveWeb3React'
 
 const useAxios = ({ url, method, body = null, headers = null }: any) => {
   const [response, setResponse] = useState(null)

@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, JSBI } from '@inscription/sdk'
+import { Currency, CurrencyAmount, JSBI } from '../../packages/swap-sdk/src/index'
 // import { BIG_INT_ZERO, MIN_EOS } from 'config/constants/exchange'
 
 /**

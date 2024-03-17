@@ -9,9 +9,9 @@ import {
 } from '@inscription/uikit'
 import styled from 'styled-components'
 import { useTranslation } from '@inscription/localization'
-import { TransactionDetails } from 'state/transactions/reducer'
-import useActiveWeb3React from 'hooks/useActiveWeb3React'
-import { getBlockExploreLink } from 'utils'
+import { TransactionDetails } from '../../../state/transactions/reducer'
+import useActiveWeb3React from '../../../hooks/useActiveWeb3React'
+import { getBlockExploreLink } from '../../../utils'
 
 interface TransactionRowProps {
   txn: TransactionDetails

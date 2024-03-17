@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@inscription/sdk'
+import { ChainId, Token } from '../../swap-sdk/src/index'
 
 export const MAINNET = new Token(
   ChainId.EVM,

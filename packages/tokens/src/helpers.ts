@@ -1,5 +1,5 @@
 import { TokenInfo, TokenList, Tags } from '@uniswap/token-lists'
-import { Token, ChainId, SerializedToken } from '@inscription/sdk'
+import { Token, ChainId, SerializedToken } from '../../swap-sdk/src/index'
 
 export interface SerializedWrappedToken extends SerializedToken {
   chainId: number

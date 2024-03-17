@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@inscription/sdk'
+import { ChainId, Token } from '../../packages/swap-sdk/src/index'
 
 const mapping = {
   [ChainId.EVM]: 'smartchain',

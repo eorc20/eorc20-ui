@@ -4,7 +4,7 @@
 //   TokenImage as UIKitTokenImage,
 //   ImageProps,
 // } from '@inscription/uikit'
-import { Token, ChainId } from '@inscription/sdk'
+import { Token, ChainId } from '../../../packages/swap-sdk/src/index'
 
 // interface TokenPairImageProps extends Omit<UIKitTokenPairImageProps, 'primarySrc' | 'secondarySrc'> {
 //   primaryToken: Token

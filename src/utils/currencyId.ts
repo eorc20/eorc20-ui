@@ -1,4 +1,4 @@
-import { Currency } from '@inscription/sdk'
+import { Currency } from '../../packages/swap-sdk/src/index'
 
 export function currencyId(currency: Currency): string {
   if (currency?.isNative) return currency.symbol?.toUpperCase()

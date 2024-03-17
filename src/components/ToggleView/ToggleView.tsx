@@ -1,7 +1,7 @@
 import { useCallback } from 'react'
 import styled from 'styled-components'
 import { ListViewIcon, CardViewIcon, IconButton } from '@inscription/uikit'
-import { ViewMode } from 'state/user/actions'
+import { ViewMode } from '../../state/user/actions'
 
 interface ToggleViewProps {
   idPrefix: string

@@ -1,9 +1,9 @@
 /* eslint-disable */
-import { ChainId } from '@inscription/sdk'
+import { ChainId } from '../../packages/swap-sdk/src/index'
 import { atom, useAtomValue } from 'jotai'
 import { useRouter } from 'next/router'
 import { useDeferredValue } from 'react'
-import { isChainSupported } from 'utils/wagmi'
+import { isChainSupported } from '../utils/wagmi'
 import { useNetwork } from 'wagmi'
 import { useSessionChainId } from './useSessionChainId'
 

@@ -1,4 +1,4 @@
-import { ChainId, Currency, CurrencyAmount, Native, Token, WNATIVE } from '@inscription/sdk'
+import { ChainId, Currency, CurrencyAmount, Native, Token, WNATIVE } from '../../packages/swap-sdk/src/index'
 
 export function wrappedCurrency(currency: Currency | undefined, chainId: ChainId | undefined): Token | undefined {
   return chainId && currency?.isNative ? WNATIVE[chainId] : currency?.isToken ? currency : undefined

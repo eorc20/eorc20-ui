@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import NextLink from 'next/link'
 import { Flex, Skeleton, UserMenuItem } from '@inscription/uikit'
-import { useWeb3React } from '@inscription/wagmi'
+import { useWeb3React } from '../../../../packages/wagmi/src/index'
 import { useTranslation } from '@inscription/localization'
 
 interface ProfileUserMenuItemProps {

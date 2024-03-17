@@ -11,34 +11,34 @@ import {
   Text,
   useModal,
 } from '@inscription/uikit'
-import { useWeb3React } from '@inscription/wagmi'
+import { useWeb3React } from '../../../../../packages/wagmi/src/index'
 import { useSigner } from 'wagmi'
 import { useState, useMemo, useEffect } from 'react'
-import ResultModal from 'components/ResultModal'
-import { useGasPrice } from 'state/user/hooks'
-import { useTransactionAdder } from 'state/transactions/hooks'
-import chainUtils from 'service/chainUtils'
+import ResultModal from '../../../../components/ResultModal'
+import { useGasPrice } from '../../../../state/user/hooks'
+import { useTransactionAdder } from '../../../../state/transactions/hooks'
+import chainUtils from '../../../../service/chainUtils'
 import { useTranslation } from '@inscription/localization'
 import { Contract } from '@ethersproject/contracts'
 import { useRouter } from 'next/router'
-import { Currency, CurrencyAmount, JSBI } from '@inscription/sdk'
-import { ChainId, Token } from '@inscription/sdk'
-import {
-  formatBigNumberToFixed,
-  formatFixedNumber,
-  truncateZero,
-  truncate,
-  formatEffectiveNumber2,
-  getRes,
-  formatEffectiveNumberSix,
-  getAdd,
-  getSub,
-} from 'utils/formatBalance'
-import useActiveWeb3React from 'hooks/useActiveWeb3React'
+// import { Currency, CurrencyAmount, JSBI } from '@inscription/sdk'
+// import { ChainId, Token } from '@inscription/sdk'
+// import {
+//   formatBigNumberToFixed,
+//   formatFixedNumber,
+//   truncateZero,
+//   truncate,
+//   formatEffectiveNumber2,
+//   getRes,
+//   formatEffectiveNumberSix,
+//   getAdd,
+//   getSub,
+// } from 'utils/formatBalance'
+import useActiveWeb3React from '../../../../hooks/useActiveWeb3React'
 import styled from 'styled-components'
 import styles from '../style/transfereorc.module.scss'
-import { formatToThousands } from 'utils/formatInfoNumbers'
-import { getTokens } from 'service/service'
+import { formatToThousands } from '../../../../utils/formatInfoNumbers'
+import { getTokens } from '../../../../service/service'
 import { ethers, utils } from 'ethers'
 // import { Span } from '@sentry/nextjs'
 // import { AnyAction } from '@reduxjs/toolkit'

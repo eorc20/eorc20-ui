@@ -1,4 +1,4 @@
-import { Currency } from '@inscription/sdk'
+import { Currency } from '../../../packages/swap-sdk/src/index'
 import styled from 'styled-components'
 import CurrencyLogo from './CurrencyLogo'
 

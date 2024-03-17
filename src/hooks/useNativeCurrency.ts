@@ -1,4 +1,4 @@
-import { ChainId, Native, NativeCurrency } from '@inscription/sdk'
+import { ChainId, Native, NativeCurrency } from '../../packages/swap-sdk/src/index'
 import { useMemo } from 'react'
 import useActiveWeb3React from './useActiveWeb3React'
 

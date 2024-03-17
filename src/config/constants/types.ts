@@ -1,5 +1,5 @@
 import BigNumber from 'bignumber.js'
-import { Token, ChainId } from '@inscription/sdk'
+import { Token, ChainId } from '../../../packages/swap-sdk/src/index'
 import { SerializedWrappedToken } from '@inscription/tokens'
 
 // a list of tokens by chain

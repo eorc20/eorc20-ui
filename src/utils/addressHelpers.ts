@@ -1,6 +1,6 @@
 /* eslint-disable */
-import { ChainId } from '@inscription/sdk'
-import addresses from 'config/constants/contracts'
+import { ChainId } from '../../packages/swap-sdk/src/index'
+import addresses from '../config/constants/contracts'
 // import { Address } from 'config/constants/types'
 // import { VaultKey } from 'state/types'
 

@@ -1,8 +1,8 @@
-import { FAST_INTERVAL, SLOW_INTERVAL } from 'config/constants'
+import { FAST_INTERVAL, SLOW_INTERVAL } from '../../config/constants'
 // eslint-disable-next-line camelcase
 import useSWR, { useSWRConfig, unstable_serialize } from 'swr'
 import useSWRImmutable from 'swr/immutable'
-import useActiveWeb3React from 'hooks/useActiveWeb3React'
+import useActiveWeb3React from '../../hooks/useActiveWeb3React'
 
 const REFRESH_BLOCK_INTERVAL = 6000
 

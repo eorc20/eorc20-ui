@@ -1,6 +1,6 @@
 import { Interface } from '@ethersproject/abi'
 import { CallOverrides, Contract } from '@ethersproject/contracts'
-import { ChainId } from '@inscription/sdk'
+import { ChainId } from '../swap-sdk/src/index'
 import multicallAbi from './Multicall.json'
 
 export const multicallAddresses = {

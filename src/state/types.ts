@@ -1,7 +1,7 @@
 import { BigNumber as EthersBigNumber } from '@ethersproject/bignumber'
 import { parseUnits } from '@ethersproject/units'
 // import { SerializedFarmPublicData } from '@inscription/farms'
-import { Token } from '@inscription/sdk'
+import { Token } from '../../packages/swap-sdk/src/index'
 import BigNumber from 'bignumber.js'
 import {
   CampaignType,
@@ -12,7 +12,7 @@ import {
   SerializedPoolConfig,
   Team,
   TranslatableText,
-} from 'config/constants/types'
+} from '../config/constants/types'
 
 export enum GAS_PRICE {
   default = '150',

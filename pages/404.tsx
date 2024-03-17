@@ -1,4 +1,4 @@
-import NotFound from '../views/NotFound'
+import NotFound from '../src/views/NotFound'
 
 const NotFoundPage = () => <NotFound />
 

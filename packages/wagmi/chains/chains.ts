@@ -1,7 +1,7 @@
 /* eslint-disable */
 import { rinkeby as defaultRinkeby, mainnet as defaultMainnet, goerli as defaultGoerli } from 'wagmi/chains'
 import { Chain } from 'wagmi'
-import { EVM_PROD_NODE } from 'utils/providers'
+import { EVM_PROD_NODE } from '../../../src/utils/providers'
 
 export const evmTest: Chain = {
   id: 15557,

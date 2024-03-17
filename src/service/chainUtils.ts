@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { axiosInstance } from 'service'
+import { axiosInstance } from '../service'
 
 export default function chainUtils(chainId = 17777) {
   let BASE_URL = ''

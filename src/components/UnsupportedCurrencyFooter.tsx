@@ -1,13 +1,13 @@
-import { Currency, Token } from '@inscription/sdk'
+import { Currency, Token } from '../../packages/swap-sdk/src/index'
 import { Button, Text, Modal, useModal, InjectedModalProps, Link } from '@inscription/uikit'
 import { useTranslation } from '@inscription/localization'
 import styled from 'styled-components'
-import { AutoRow } from 'components/Layout/Row'
-import { AutoColumn } from 'components/Layout/Column'
-import { CurrencyLogo } from 'components/Logo'
-import useActiveWeb3React from 'hooks/useActiveWeb3React'
-import { getBlockExploreLink } from 'utils'
-import { wrappedCurrency } from 'utils/wrappedCurrency'
+import { AutoRow } from '../components/Layout/Row'
+import { AutoColumn } from '../components/Layout/Column'
+import { CurrencyLogo } from '../components/Logo'
+import useActiveWeb3React from '../hooks/useActiveWeb3React'
+import { getBlockExploreLink } from '../utils'
+import { wrappedCurrency } from '../utils/wrappedCurrency'
 
 interface Props extends InjectedModalProps {
   currencies: (Currency | undefined)[]

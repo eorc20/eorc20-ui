@@ -1,9 +1,9 @@
-import { useWeb3React } from '@inscription/wagmi'
+import { useWeb3React } from '../../packages/wagmi/src/index'
 import { useRouter, NextRouter } from 'next/router'
 import { useEffect } from 'react'
-import { isChainSupported } from 'utils/wagmi'
+import { isChainSupported } from '../utils/wagmi'
 import { useProvider } from 'wagmi'
-import { ChainId } from '@inscription/sdk'
+import { ChainId } from '../../packages/swap-sdk/src/index'
 import { useActiveChainId } from './useActiveChainId'
 import { useSwitchNetworkLoading } from './useSwitchNetworkLoading'
 

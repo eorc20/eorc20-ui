@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import { useTranslation } from '@inscription/localization'
 import { Button, Text, Link, HelpIcon } from '@inscription/uikit'
-import { ChainId } from '@inscription/sdk'
-import { useSwitchNetwork } from 'hooks/useSwitchNetwork'
+import { ChainId } from '../../../../packages/swap-sdk/src/index'
+import { useSwitchNetwork } from '../../../hooks/useSwitchNetwork'
 
 const StyledLink = styled(Link)`
   width: 100%;

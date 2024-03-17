@@ -1,7 +1,7 @@
 import { Flex, UserMenuItem, WarningIcon } from '@inscription/uikit'
 import { useTranslation } from '@inscription/localization'
 // import { useGetEosBalance } from 'hooks/useTokenBalance'
-import { FetchStatus } from 'config/constants/types'
+import { FetchStatus } from '../../../config/constants/types'
 import { LOW_EOS_BALANCE } from './WalletModal'
 
 interface WalletUserMenuItemProps {

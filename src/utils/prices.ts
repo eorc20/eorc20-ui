@@ -1,4 +1,4 @@
-import { Currency, Price } from '@inscription/sdk'
+import { Currency, Price } from '../../packages/swap-sdk/src/index'
 /**
  * Helper to multiply a Price object by an arbitrary amount
  */

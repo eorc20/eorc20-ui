@@ -2,13 +2,13 @@ import { ModalProvider, light, dark, UIKitProvider } from '@inscription/uikit'
 import { Provider } from 'react-redux'
 import { SWRConfig } from 'swr'
 import { LanguageProvider } from '@inscription/localization'
-import { ToastsProvider } from 'contexts/ToastsContext'
-import { fetchStatusMiddleware } from 'hooks/useSWRContract'
+import { ToastsProvider } from './contexts/ToastsContext'
+import { fetchStatusMiddleware } from './hooks/useSWRContract'
 import { Store } from '@reduxjs/toolkit'
 import { ThemeProvider as NextThemeProvider, useTheme as useNextTheme } from 'next-themes'
-import { WagmiProvider } from '@inscription/wagmi'
-import { client } from 'utils/wagmi'
-import { HistoryManagerProvider } from 'contexts/HistoryContext'
+import { WagmiProvider } from '../packages/wagmi/src/index'
+import { client } from './utils/wagmi'
+import { HistoryManagerProvider } from './contexts/HistoryContext'
 
 const StyledUIKitProvider: React.FC<React.PropsWithChildren> = ({ children, ...props }) => {
   const { resolvedTheme } = useNextTheme()

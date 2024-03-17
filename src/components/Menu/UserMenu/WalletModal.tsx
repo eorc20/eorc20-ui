@@ -10,7 +10,7 @@ import {
   ModalTitle,
   useMatchBreakpoints,
 } from '@inscription/uikit'
-import { useWeb3React } from '@inscription/wagmi'
+import { useWeb3React } from '../../../../packages/wagmi/src/index'
 import { useState } from 'react'
 import { useTranslation } from '@inscription/localization'
 import styled from 'styled-components'

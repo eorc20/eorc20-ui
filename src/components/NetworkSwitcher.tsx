@@ -11,16 +11,16 @@ import {
   UserMenuItem,
   useTooltip,
 } from '@inscription/uikit'
-import { ChainId, NATIVE } from '@inscription/sdk'
-import { useActiveChainId, useLocalNetworkChain } from 'hooks/useActiveChainId'
-import { useNetworkConnectorUpdater } from 'hooks/useActiveWeb3React'
+import { ChainId, NATIVE } from '../../packages/swap-sdk/src/index'
+import { useActiveChainId, useLocalNetworkChain } from '../hooks/useActiveChainId'
+import { useNetworkConnectorUpdater } from '../hooks/useActiveWeb3React'
 import { useTranslation } from '@inscription/localization'
-import { useSessionChainId } from 'hooks/useSessionChainId'
+import { useSessionChainId } from '../hooks/useSessionChainId'
 // import { useHover } from 'hooks/useHover'
 import { useNetwork } from 'wagmi'
-import { useSwitchNetwork } from 'hooks/useSwitchNetwork'
+import { useSwitchNetwork } from '../hooks/useSwitchNetwork'
 import { useMemo } from 'react'
-import { chains } from 'utils/wagmi'
+import { chains } from '../utils/wagmi'
 // import { ChainLogo } from './Logo/ChainLogo'
 
 const NetworkSelect = ({ switchNetwork, chainId }) => {

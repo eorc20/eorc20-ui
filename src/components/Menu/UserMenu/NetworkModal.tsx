@@ -13,17 +13,17 @@ import {
   Flex,
   useModal,
 } from '@inscription/uikit'
-import { useWeb3React } from '@inscription/wagmi'
-import { useState, useMemo } from 'react'
+// import { useWeb3React } from '@inscription/wagmi'
+// import { useState, useMemo } from 'react'
 import { useTranslation } from '@inscription/localization'
 import styled from 'styled-components'
-import { ChainLogo } from 'components/Logo/ChainLogo'
-import { chains, isChainSupported } from 'utils/wagmi'
-import { useActiveChainId } from 'hooks/useActiveChainId'
-import { useSwitchNetwork } from 'hooks/useSwitchNetwork'
-import { useNetworkConnectorUpdater } from 'hooks/useActiveWeb3React'
-import useActiveWeb3React from 'hooks/useActiveWeb3React'
-import useToast from 'hooks/useToast'
+// import { ChainLogo } from '../../../components/Logo/ChainLogo'
+// import { chains, isChainSupported } from '../../../utils/wagmi'
+// import { useActiveChainId } from '../../../hooks/useActiveChainId'
+import { useSwitchNetwork } from '../../../hooks/useSwitchNetwork'
+// import { useNetworkConnectorUpdater } from '../../../hooks/useActiveWeb3React'
+// import useActiveWeb3React from '../../../hooks/useActiveWeb3React'
+import useToast from '../../../hooks/useToast'
 import { useRouter, NextRouter } from 'next/router'
 // eslint-disable-next-line import/no-cycle
 import RpcModal from './RpcModal'
@@ -72,9 +72,9 @@ const getHashFromRouter = (router: NextRouter) => {
 }
 const NetworkModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ onDismiss }) => {
   const { t } = useTranslation()
-  const router = useRouter()
-  const { pendingChainId, isLoading, switchNetworkAsync } = useSwitchNetwork()
-  const { toastError } = useToast()
+  // const router = useRouter()
+  // const { pendingChainId, isLoading, switchNetworkAsync } = useSwitchNetwork()
+  // const { toastError } = useToast()
 
   const [onPresentRpcModal] = useModal(<RpcModal />)
 

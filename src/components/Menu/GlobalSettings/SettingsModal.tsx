@@ -8,13 +8,13 @@ import {
   useUserExpertModeAcknowledgementShow,
   useUserSingleHopOnly,
   useZapModeManager,
-} from 'state/user/hooks'
-import { ChainId } from '@inscription/sdk'
-import { SUPPORT_ZAP } from 'config/constants/supportChains'
+} from '../../../state/user/hooks'
+// import { ChainId } from '@inscription/sdk'
+// import { SUPPORT_ZAP } from 'config/constants/supportChains'
 // import { useSwapActionHandlers } from 'state/swap/useSwapActionHandlers'
-import { useActiveChainId } from 'hooks/useActiveChainId'
+// import { useActiveChainId } from 'hooks/useActiveChainId'
 import { useTranslation } from '@inscription/localization'
-import useTheme from 'hooks/useTheme'
+import useTheme from '../../../hooks/useTheme'
 import QuestionHelper from '../../QuestionHelper'
 import TransactionSettings from './TransactionSettings'
 import ExpertModal from './ExpertModal'

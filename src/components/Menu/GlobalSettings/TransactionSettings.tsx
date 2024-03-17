@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { escapeRegExp } from 'utils'
+import { escapeRegExp } from '../../../utils'
 import { Text, Button, Input, Flex, Box } from '@inscription/uikit'
 import { useTranslation } from '@inscription/localization'
-import { useUserSlippageTolerance, useUserTransactionTTL } from 'state/user/hooks'
+import { useUserSlippageTolerance, useUserTransactionTTL } from '../../../state/user/hooks'
 import QuestionHelper from '../../QuestionHelper'
 
 enum SlippageError {

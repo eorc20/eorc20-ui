@@ -1,6 +1,6 @@
-import { ChainId } from '@inscription/sdk'
-import store from 'state'
-import { GAS_PRICE_GWEI } from 'state/types'
+import { ChainId } from '../../packages/swap-sdk/src/index'
+import store from '../state'
+import { GAS_PRICE_GWEI } from '../state/types'
 
 /**
  * @deprecated not recommend to get state out of redux hook

@@ -14,14 +14,14 @@ import {
   UserMenuVariant,
 } from '@inscription/uikit'
 import { useTranslation } from '@inscription/localization'
-import useActiveWeb3React from 'hooks/useActiveWeb3React'
+import useActiveWeb3React from '../../hooks/useActiveWeb3React'
 import styled from 'styled-components'
-import { AutoColumn, ColumnCenter } from 'components/Layout/Column'
-import { getBlockExploreLink, getBlockExploreName } from 'utils'
-import truncateHash from 'utils/truncateHash'
-import { usePendingTransactions } from 'state/transactions/hooks'
+import { AutoColumn, ColumnCenter } from '../../components/Layout/Column'
+import { getBlockExploreLink, getBlockExploreName } from '../../utils'
+// import truncateHash from 'utils/truncateHash'
+import { usePendingTransactions } from '../../state/transactions/hooks'
 import { useEffect, useMemo, useState } from 'react'
-import { Console } from 'console'
+// import { Console } from 'console'
 
 export const ModalHeader = styled.div<{ background?: string }>`
   align-items: center;

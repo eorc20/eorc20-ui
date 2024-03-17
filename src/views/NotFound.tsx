@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Button, Heading, Text, LogoIcon } from '@inscription/uikit'
-import Page from 'components/Layout/Page'
+import Page from '../components/Layout/Page'
 import { useTranslation } from '@inscription/localization'
 import Link from 'next/link'
 
